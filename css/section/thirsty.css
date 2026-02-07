@@ -1,0 +1,31 @@
+.thirsty {
+    grid-area: thirsty;
+    background-color: #ffba4a;
+}
+
+
+.common--row-rev {
+    flex-direction: row-reverse;
+}
+
+.common--row-rev .common__desc {
+    text-align: right;
+}
+
+.thirsty .common__desc {
+    max-width: 200px;
+}
+
+/* media */
+
+@media (max-width: 1200px) {
+    .common--row-rev {
+        padding-right: 90px;
+    }
+}
+
+@media (max-width: 600px) {
+    .common--row-rev {
+        padding-right: 30px;
+    }
+}

@@ -1,0 +1,163 @@
+.wrapper-down {
+    display: grid;
+    grid-template: "footer sidebar" 1fr / 4.5fr 1.5fr;
+}
+
+.footer {
+    padding-top: 80px;
+    grid-area: footer;
+    display: grid;
+    grid-template:". socials form logo" max-content 
+    ". . . copy" 100px / 1fr 1fr 1.5fr 1fr;
+    align-items: end;
+    align-content: center;
+
+    background-color: #2f2f2f;
+
+    color: #Fff;
+}
+
+.socials {
+    grid-area: socials;
+    display: flex;
+    gap: 10px;
+}
+
+.socials__link {
+    border:2px solid #fff;
+    border-radius: 50%;
+
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.2s;
+
+    &:hover {
+        opacity: 0.8;
+    }
+
+    &:active {
+        opacity: 0.6;
+    }
+}
+
+.SOCIALS__ICON {
+    width: 20px;
+    height: 20px;
+}
+
+.form {
+    grid-area: form;
+    text-transform: uppercase;
+}
+
+.form__title {
+    font-size: 18px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.form_row {
+    display: flex;
+}
+
+.form__input {
+    height: 40px;
+    width: 200px;
+    padding: 0 20px;
+    outline: none;
+    background-color: rgb(255, 255, 255, 0.6);
+    text-transform: uppercase;
+
+    &:focus {
+        background-color: rgb(255, 255, 255);
+    }
+}
+
+.form__submit-btn {
+    background-color: #00c2ba;
+    color: #fff;
+    height: 40px;
+    padding: 0 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+
+    transition: background-color 0.2s;
+
+    &:hover {
+        background-color: #00eae0;
+    }
+
+    &:active {
+        background-color: #00aaa3;
+    }
+}
+
+.logo-img {
+    fill:#6a6a6a;
+    justify-self: center;
+    transition: fill 0.2s;
+
+    &:hover {
+        fill: #00c2ba;
+    }
+}
+
+.footer__logo {
+    grid-area: logo;
+}
+
+.copy {
+    grid-area: copy;
+    color: #6a6a6a;
+    align-self: center;
+    justify-self: center;
+}
+
+
+/* media */
+
+@media (max-width: 1300px) {
+    .footer {
+        grid-template:"socials form logo" max-content 
+        ". . copy" 100px / 1fr 1.5fr 1fr;
+
+        padding-left: 5%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .wrapper-down {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "sidebar" "footer";
+    }
+
+}
+
+@media (max-width: 760px) {
+    .footer {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "socials" "form" "logo" "copy";
+        gap: 30px;
+
+        padding: 40px 20px;
+
+        justify-items: center;
+        text-align: center;
+    }
+} 
+
+@media (max-width:350px) {
+    .form__input {
+        width: 170px;
+    }
+    
+    .header, .footer {
+        padding-inline: 10px;
+    }
+}

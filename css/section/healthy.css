@@ -1,0 +1,28 @@
+.healthy {
+    grid-area: healthy;
+    background-color: #ff494b;
+    padding-bottom: 105px;
+}
+
+
+.common--col-rev {
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+}
+
+.common--col-rev .commin__desc {
+    max-width: 140px;
+}
+
+/* media */
+
+@media (max-width: 600px) {
+    .healthy {
+        padding-bottom: 30px;
+    }
+
+    .common--col-rev {
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+}

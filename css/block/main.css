@@ -1,0 +1,40 @@
+.main {
+    display: grid;
+    grid-template: "slider-arrows healthy thirsty thirsty" 3fr
+                   "slider-arrows healthy slider-dots orange" 1fr
+                   "freshy healthy slider-dots orange" 3fr / 2fr 1fr 1.5fr 1.5fr;
+}
+
+.slider-arrows, .slider-dots, .orange {
+    height: 400px;
+ }
+
+/* media */
+
+@media (max-width: 1200px) {
+    .main {
+        grid-template-rows: 1fr auto;
+        grid-template-columns: 1fr 0.5fr 0.5fr 1fr;
+        grid-template-areas: "freshy freshy freshy healthy"
+                             "slider-arrows slider-arrows slider-arrows healthy"
+                             "thirsty thirsty thirsty thirsty"
+                             "slider-dots slider-dots orange orange";
+    }
+
+    .slider-arrows, .slider-dots, .orange {
+        height: 300px;
+    }
+
+    .slider-dots__item, .slider-arrows__item {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .main {
+        grid-template-columns: 1fr;
+        grid-template-areas: "healthy" "slider-arrows" "freshy" "slider-dots" "thirsty" "orange";
+    }
+
+}

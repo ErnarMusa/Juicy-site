@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300;400;900&family=PT+Sans&family=Secular+One&display=swap');
+@import "./reset.css";
+
+
+/* Block */
+@import "./block/header.css";
+@import "./block/main.css";
+@import "./block/footer.css";
+
+
+
+/* Section */
+@import './section/arrows.css';
+@import "./section/dots.css";
+@import "./section/frshy.css";
+@import "./section/healthy.css";
+@import "./section/thirsty.css";
+@import "./section/orange.css";
+@import "./section/sidbar.css";
+
+
+/* ----Section-app---- */
+@import "./section-app/burgermenu.css";
+@import "./section-app/all-block-style.css";
+
+
+/* 
+font-family: "Secular One", sans-serif; 400 для лого
+font-family: "Fira Sans Condensed", sans-serif; 
+300, 400, 900 Тақырып
+font-family: "PT Sans", sans-serif; 400 текст
+*/
+
+/* BASE STYLE AND CONTAINER */
+
+body {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+button {
+    -webkit-tap-highlight-color:transparent;
+}
+
+.slider-arrows__item, .slider-dots__item {
+    animation: fade 0.5s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 1;
+    }
+}

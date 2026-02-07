@@ -1,0 +1,10 @@
+.freshy {
+    grid-area: freshy;
+    background-color: #bee163;
+}
+
+/* media */
+
+@media (max-width: 1300px) {
+
+}
