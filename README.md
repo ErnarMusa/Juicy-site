@@ -2,7 +2,7 @@
 
 ###
 
-<img align="right" height="150" src="https://i.imgflip.com/65efzo.gif"  />
+<img align="right" height="150" src="https://i.imgflip.com/65efzo.gif](https://sys3.ru/synergy-api/uploads/articles/2024/10/professiya_fullstack_razrabotchik_na_javascript_0.webp"  />
 
 ###
 
